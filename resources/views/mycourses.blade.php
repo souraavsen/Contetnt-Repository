@@ -130,7 +130,7 @@
                 class="text-decoration-none text-dark"
               > -->
             <?php while ($row = $result->fetch_assoc()):?>
-              <div class="col">
+              <div class="col py-5">
               <div class="card p-2 mx-auto" style="width: 15rem">
                 <a
                   href="/details/<?php echo $row['id'];?>"
@@ -154,7 +154,7 @@
                       </h6>
                       <p><?php echo $row['c_code'];?>(<?php echo $row['section'];?>)</p>
                     </a>
-                     <a href="#" class="btn disabled btn-light m-auto">Joined</a>
+                     <a href="#" class="btn  fw-bold bg_blue m-auto">Edit</a>
                       <a href="handle.php?delete=<?php echo $row['id']?>" id="remove" class="delete btn btn-danger m-auto">Remove</a>
                   </div>
                   <img
